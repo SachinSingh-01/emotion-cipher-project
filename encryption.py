@@ -1,8 +1,6 @@
 # encryption.py
-# -------------------------------------------------------------
 # Simple encryption + decryption utility using Fernet.
 # I kept it minimal so it’s easy to read and test.
-# -------------------------------------------------------------
 
 from cryptography.fernet import Fernet
 import os

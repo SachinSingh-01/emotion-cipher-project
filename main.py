@@ -1,5 +1,4 @@
 # main.py
-# -------------------------------------------------------------
 # Emotion Cipher - Final Integrated Project
 # Author: Sachin Kumar
 # Date: November 2025
@@ -7,7 +6,6 @@
 # This file combines:
 # 1. Emotion detection (keyword-based)
 # 2. Encryption & Decryption using Fernet
-# -------------------------------------------------------------
 
 from emotion_detection import detect_emotions
 from encryption import load_key, generate_key, encrypt_text, decrypt_text
@@ -22,9 +20,7 @@ def ensure_key():
     return load_key(key_file)
 
 def main():
-    print("\n==============================")
-    print("🧠 Emotion Cipher - Python Project")
-    print("==============================\n")
+    print(" Emotion Cipher - Python Project")
 
     # Step 1 — Load or generate encryption key
     key = ensure_key()
@@ -45,12 +41,10 @@ def main():
     decrypted_msg = decrypt_text(encrypted_msg, key)
 
     # Step 6 — Show Results
-    print("\n---------- OUTPUT ----------")
     print(f"Original Message: {message}")
     print(f"Detected Emotions: {', '.join(emotions)}")
     print(f"Encrypted Message: {encrypted_msg}")
     print(f"Decrypted Message: {decrypted_msg}")
-    print("----------------------------\n")
 
 if __name__ == "__main__":
     main()

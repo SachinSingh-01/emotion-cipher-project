@@ -2,10 +2,8 @@
 # Date: 9 November 2025
 
 # emotion_detection.py
-# -------------------------------------------------------------
 # My own simple logic for detecting emotions from text.
 # It’s not perfect, but it works well for small prototypes.
-# -------------------------------------------------------------
 
 EMOTION_KEYWORDS = {
     "Joy": ["happy", "joy", "excited", "thrilled", "glad"],
